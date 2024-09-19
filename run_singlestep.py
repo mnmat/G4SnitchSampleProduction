@@ -61,7 +61,7 @@ idx = args.idx
 
 
 
-genProducer = {'singlephoton':"closeBy", 'singlepi':"closeBy", 'singleel':"flatEGun", 'singlekaon':"flatEGun", 'singlemuon': "flatEGun"}
+genProducer = {'singlephoton':"closeBy", 'singlepi':"closeBy", 'singleel':"flatEGun", 'singlekaon':"closeBy", 'singlemuon': "flatEGun"}
 if not os.path.isdir(args.folderout):
   os.makedirs(args.folderout)
 #errfile = open(args.folderout+'/'+'errors.txt','w')
