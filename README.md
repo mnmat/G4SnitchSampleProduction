@@ -1,3 +1,4 @@
+Create Workflow:
 ```
 cmsrel CMSSW_14_1_0_pre5 # also tried with CMSSW_14_0_0_pre3, see error below
 cd CMSSW_14_1_0_pre5/src
@@ -16,4 +17,12 @@ scram b -j32 # You still have to build it even though you are manually building 
 
 git clone git@github.com:mnmat/G4SnitchSampleProduction.git
 
+```
+
+Run on muon samples (after setting outDir in create_samples.sh):
+
+```
+. create_samples.sh 1.7_2.7 100 100 1 step1
+. create_samples.sh 1.7_2.7 100 100 1 step2
+. create_samples.sh 1.7_2.7 100 100 1 step3
 ```
